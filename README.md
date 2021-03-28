@@ -10,9 +10,4 @@
 6. Fill `refresh_token`, `root_folder_id` and other options on the top of the script.
 7. Deploy!
 
-## Lite mode
-
-This mode will serve a simple nginx-like directory listing, and it only work with one drive. `upload` will be ignored in this mode.
-
-On the top of the script, change `lite: false` into `lite: true`, than thats all.
 
