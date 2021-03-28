@@ -62,22 +62,22 @@ const authConfig = {
 /**
  * web ui config
  */
-const thisYear = new Date().getFullYear();
+const thisYear = new Date().getFullYear() + 51; //Cloudflare's workers date is set to 1970
 const uiConfig = {
 	"theme": "dark", // switch between themes, default set to dark, select from repo readme
 	"dark_mode": true, // incase you're viewing wrong colors try switching this
-	"version": "2.0.12", // don't touch this one. get latest code from repo
+	"version": "master/web", // don't touch this one. get latest code from repo
 	"logo_image": false, // true if you're using image link in next option.
 	"logo_height": "", // only if logo_image is true
 	"logo_width": "100px", // only if logo_image is true
 	"logo_link_name": "", // if logo is true then link otherwise just text for name
 	"contact_link": "https://github.com/Jayapraveen", // Link to Contact Button on Menu
 	"copyright_year": thisYear, // year of copyright.
-	"company_name": "Google Drive Index from Jayapraveen", // Name next to copyright
+	"company_name": "Jayapraveen", // Name next to copyright
 	"company_link": "https://github.com/Jayapraveen", // link of copyright name
 	"credit": false, // Set this to true to give us credit
 	"display_size": true, // Set this to false to hide display file size
-	"display_time": false, // Set this to false to hide display modified time for folder and files
+	"display_time": true, // Set this to false to hide display modified time for folder and files
         "disable_player": false, // Set this to true to hide audio and video players
 	"poster": "https://cdn.jsdelivr.net/gh/Jayapraveen/Google-Drive-Index@master/web/images/poster.jpg", // Video poster URL or see Readme to how to load from Drive
 	"audioposter": "https://cdn.jsdelivr.net/gh/Jayapraveen/Google-Drive-Index@master/web/images/music.jpg", // Video poster URL or see Readme to how to load from Drive
